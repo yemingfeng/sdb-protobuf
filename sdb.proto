@@ -1,19 +1,19 @@
 syntax = "proto3";
 
 package proto;
-option go_package = "pkg/protobuf";
 
-import "pkg/protobuf-spec/string.proto";
-import "pkg/protobuf-spec/list.proto";
-import "pkg/protobuf-spec/set.proto";
-import "pkg/protobuf-spec/sorted_set.proto";
-import "pkg/protobuf-spec/bloom_filter.proto";
-import "pkg/protobuf-spec/hyper_log_log.proto";
-import "pkg/protobuf-spec/bitset.proto";
-import "pkg/protobuf-spec/map.proto";
-import "pkg/protobuf-spec/geo_hash.proto";
-import "pkg/protobuf-spec/page.proto";
-import "pkg/protobuf-spec/pub_sub.proto";
+
+import "pkg/sdb-protobuf/string.proto";
+import "pkg/sdb-protobuf/list.proto";
+import "pkg/sdb-protobuf/set.proto";
+import "pkg/sdb-protobuf/sorted_set.proto";
+import "pkg/sdb-protobuf/bloom_filter.proto";
+import "pkg/sdb-protobuf/hyper_log_log.proto";
+import "pkg/sdb-protobuf/bitset.proto";
+import "pkg/sdb-protobuf/map.proto";
+import "pkg/sdb-protobuf/geo_hash.proto";
+import "pkg/sdb-protobuf/page.proto";
+import "pkg/sdb-protobuf/pub_sub.proto";
 
 service SDB {
   // string 类型的存储
