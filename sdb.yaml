@@ -117,9 +117,6 @@ http:
       post: /v1/hll-count
       body: "*"
 
-    - selector: proto.SDB.BSCreate
-      post: /v1/bs-create
-      body: "*"
     - selector: proto.SDB.BSDel
       post: /v1/bs-del
       body: "*"
