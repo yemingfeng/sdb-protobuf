@@ -58,12 +58,14 @@ service SDB {
   rpc BFDel(BFDelRequest) returns (BFDelResponse) {}
   rpc BFAdd(BFAddRequest) returns (BFAddResponse) {}
   rpc BFExist(BFExistRequest) returns (BFExistResponse) {}
+  rpc BFTtl(BFTtlRequest) returns (BFTtlResponse) {}
 
   // hyper log log 类型的存储
   rpc HLLCreate(HLLCreateRequest) returns (HLLCreateResponse) {}
   rpc HLLDel(HLLDelRequest) returns (HLLDelResponse) {}
   rpc HLLAdd(HLLAddRequest) returns (HLLAddResponse) {}
   rpc HLLCount(HLLCountRequest) returns (HLLCountResponse) {}
+  rpc HLLTtl(HLLTtlRequest) returns (HLLTtlResponse) {}
 
   // bitset 类型的存储
   rpc BSDel(BSDelRequest) returns (BSDelResponse) {}
@@ -73,6 +75,7 @@ service SDB {
   rpc BSMGet(BSMGetRequest) returns (BSMGetResponse) {}
   rpc BSCount(BSCountRequest) returns (BSCountResponse) {}
   rpc BSCountRange(BSCountRangeRequest) returns (BSCountRangeResponse) {}
+  rpc BSTtl(BSTtlRequest) returns (BSTtlResponse) {}
 
   // map 类型的存储
   rpc MPush(MPushRequest) returns (MPushResponse) {}

@@ -7,6 +7,7 @@ option go_package = "pkg/protobuf";
 message LRPushRequest {
   bytes key = 1;
   repeated bytes values = 2;
+  uint64 ttl = 3;
 }
 
 message LRPushResponse {
@@ -16,6 +17,7 @@ message LRPushResponse {
 message LLPushRequest {
   bytes key = 1;
   repeated bytes values = 2;
+  uint64 ttl = 3;
 }
 
 message LLPushResponse {

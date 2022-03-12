@@ -12,6 +12,7 @@ message Tuple {
 message ZPushRequest {
   bytes key = 1;
   repeated Tuple tuples = 2;
+  uint64 ttl = 3;
 }
 
 message ZPushResponse {

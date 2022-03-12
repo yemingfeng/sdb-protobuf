@@ -12,6 +12,7 @@ message Pair {
 message MPushRequest {
   bytes key = 1;
   repeated Pair pairs = 2;
+  uint64 ttl = 3;
 }
 
 message MPushResponse {

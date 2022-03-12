@@ -15,4 +15,5 @@ enum DataType {
   MAP = 7;
   GEO_HASH = 8;
   PAGE = 100;
+  TTL = 101;
 }

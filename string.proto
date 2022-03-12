@@ -7,6 +7,7 @@ option go_package = "pkg/protobuf";
 message SetRequest {
   bytes key = 1;
   bytes value = 2;
+  uint64 ttl = 3;
 }
 
 message SetResponse {
@@ -16,6 +17,7 @@ message SetResponse {
 message MSetRequest {
   repeated bytes keys = 1;
   repeated bytes values = 2;
+  uint64 ttl = 3;
 }
 
 message MSetResponse {
@@ -25,6 +27,7 @@ message MSetResponse {
 message SetNXRequest {
   bytes key = 1;
   bytes value = 2;
+  uint64 ttl = 3;
 }
 
 message SetNXResponse {
@@ -58,6 +61,7 @@ message DelResponse {
 message IncrRequest {
   bytes key = 1;
   int32 delta = 2;
+  uint64 ttl = 3;
 }
 
 message IncrResponse {
