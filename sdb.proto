@@ -66,7 +66,6 @@ service SDB {
   rpc HLLCount(HLLCountRequest) returns (HLLCountResponse) {}
 
   // bitset 类型的存储
-  rpc BSCreate(BSCreateRequest) returns (BSCreateResponse) {}
   rpc BSDel(BSDelRequest) returns (BSDelResponse) {}
   rpc BSSetRange(BSSetRangeRequest) returns (BSSetRangeResponse) {}
   rpc BSMSet(BSMSetRequest) returns (BSMSetResponse) {}

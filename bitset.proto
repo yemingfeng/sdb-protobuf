@@ -3,14 +3,6 @@ syntax = "proto3";
 package proto;
 option go_package = "pkg/protobuf";
 
-message BSCreateRequest {
-  bytes key = 1;
-  uint32 size = 2;
-}
-
-message BSCreateResponse {
-  bool success = 1;
-}
 
 message BSDelRequest {
   bytes key = 1;
