@@ -40,11 +40,11 @@ message BFExistResponse {
   repeated bool exists = 1;
 }
 
-message BFTTLRequest {
+message BFTtlRequest {
   bytes key = 1;
   uint64 ttl = 2;
 }
 
-message BFTTLResponse {
+message BFTtlResponse {
   bool success = 1;
 }

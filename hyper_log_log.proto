@@ -37,11 +37,11 @@ message HLLCountResponse {
   uint32 count = 1;
 }
 
-message HLLTTLRequest {
+message HLLTtlRequest {
   bytes key = 1;
   uint64 ttl = 2;
 }
 
-message HLLTTLResponse {
+message HLLTtlResponse {
   bool success = 1;
 }
