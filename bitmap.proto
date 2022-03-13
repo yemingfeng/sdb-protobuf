@@ -4,68 +4,68 @@ package proto;
 option go_package = "pkg/protobuf";
 
 
-message BSDelRequest {
+message BMDelRequest {
   bytes key = 1;
 }
 
-message BSDelResponse {
+message BMDelResponse {
   bool success = 1;
 }
 
-message BSSetRangeRequest {
+message BMSetRangeRequest {
   bytes key = 1;
   uint32 start = 2;
   uint32 end = 3;
   bool value = 4;
 }
 
-message BSSetRangeResponse {
+message BMSetRangeResponse {
   bool success = 1;
 }
 
-message BSMSetRequest {
+message BMMSetRequest {
   bytes key = 1;
   repeated uint32 bits = 2;
   bool value = 3;
 }
 
-message BSMSetResponse {
+message BMMSetResponse {
   bool success = 1;
 }
 
-message BSGetRangeRequest {
+message BMGetRangeRequest {
   bytes key = 1;
   uint32 start = 2;
   uint32 end = 3;
 }
 
-message BSGetRangeResponse {
+message BMGetRangeResponse {
   repeated bool values = 1;
 }
 
-message BSMGetRequest {
+message BMMGetRequest {
   bytes key = 1;
   repeated uint32 bits = 2;
 }
 
-message BSMGetResponse {
+message BMMGetResponse {
   repeated bool values = 1;
 }
 
-message BSCountRequest {
+message BMCountRequest {
   bytes key = 1;
 }
 
-message BSCountResponse {
+message BMCountResponse {
   uint32 count = 1;
 }
 
-message BSCountRangeRequest {
+message BMCountRangeRequest {
   bytes key = 1;
   uint32 start = 2;
   uint32 end = 3;
 }
 
-message BSCountRangeResponse {
+message BMCountRangeResponse {
   uint32 count = 1;
 }

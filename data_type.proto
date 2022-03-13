@@ -11,7 +11,7 @@ enum DataType {
   SORTED_SET = 3;
   BLOOM_FILTER = 4;
   HYPER_LOG_LOG = 5;
-  BITSET = 6;
+  BITMAP = 6;
   MAP = 7;
   GEO_HASH = 8;
   PAGE = 100;
