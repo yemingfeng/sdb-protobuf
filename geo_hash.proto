@@ -31,6 +31,7 @@ message GHDelResponse {
 message GHAddRequest {
   bytes key = 1;
   repeated Point points = 2;
+  uint64 ttl = 3;
 }
 
 message GHAddResponse {

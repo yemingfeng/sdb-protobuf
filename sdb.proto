@@ -65,14 +65,14 @@ service SDB {
   rpc HLLAdd(HLLAddRequest) returns (HLLAddResponse) {}
   rpc HLLCount(HLLCountRequest) returns (HLLCountResponse) {}
 
-  // bitset 类型的存储
-  rpc BSDel(BSDelRequest) returns (BSDelResponse) {}
-  rpc BSSetRange(BSSetRangeRequest) returns (BSSetRangeResponse) {}
-  rpc BSMSet(BSMSetRequest) returns (BSMSetResponse) {}
-  rpc BSGetRange(BSGetRangeRequest) returns (BSGetRangeResponse) {}
-  rpc BSMGet(BSMGetRequest) returns (BSMGetResponse) {}
-  rpc BSCount(BSCountRequest) returns (BSCountResponse) {}
-  rpc BSCountRange(BSCountRangeRequest) returns (BSCountRangeResponse) {}
+  // bitmap 类型的存储
+  rpc BMDel(BMDelRequest) returns (BMDelResponse) {}
+  rpc BMSetRange(BMSetRangeRequest) returns (BMSetRangeResponse) {}
+  rpc BMMSet(BMMSetRequest) returns (BMMSetResponse) {}
+  rpc BMGetRange(BMGetRangeRequest) returns (BMGetRangeResponse) {}
+  rpc BMMGet(BMMGetRequest) returns (BMMGetResponse) {}
+  rpc BMCount(BMCountRequest) returns (BMCountResponse) {}
+  rpc BMCountRange(BMCountRangeRequest) returns (BMCountRangeResponse) {}
 
   // map 类型的存储
   rpc MPush(MPushRequest) returns (MPushResponse) {}

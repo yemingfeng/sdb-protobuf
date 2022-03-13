@@ -39,3 +39,12 @@ message BFExistRequest {
 message BFExistResponse {
   repeated bool exists = 1;
 }
+
+message BFTTLRequest {
+  bytes key = 1;
+  uint64 ttl = 2;
+}
+
+message BFTTLResponse {
+  bool success = 1;
+}
