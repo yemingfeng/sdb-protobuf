@@ -13,4 +13,5 @@ message Row {
   bytes id = 3;
   repeated Index indexes = 4;
   bytes value = 5;
+  uint64 ttl = 6;
 }
