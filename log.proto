@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package proto;
+option go_package = "pkg/protobuf";
+
+
+message Log {
+  repeated LogEntry logEntries = 1;
+}
+
+message LogEntry {
+  bytes op = 1;
+  bytes key = 2;
+  bytes value = 3;
+}
