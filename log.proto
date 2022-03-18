@@ -15,6 +15,6 @@ message LogEntry {
 }
 
 enum Op {
-  SET = 0;
-  DEL = 1;
+  OP_SET = 0;
+  OP_DEL = 1;
 }
