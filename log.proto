@@ -9,7 +9,12 @@ message Log {
 }
 
 message LogEntry {
-  bytes op = 1;
+  Op op = 1;
   bytes key = 2;
   bytes value = 3;
+}
+
+enum Op {
+  SET = 0;
+  DEL = 1;
 }
