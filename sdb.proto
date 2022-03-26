@@ -14,6 +14,7 @@ import "pkg/sdb-protobuf/bitset.proto";
 import "pkg/sdb-protobuf/map.proto";
 import "pkg/sdb-protobuf/geo_hash.proto";
 import "pkg/sdb-protobuf/page.proto";
+import "pkg/sdb-protobuf/cluster.proto";
 import "pkg/sdb-protobuf/pub_sub.proto";
 
 service SDB {
@@ -98,4 +99,8 @@ service SDB {
   // pub/sub
   rpc Subscribe(SubscribeRequest) returns (stream Message) {}
   rpc Publish(PublishRequest) returns (PublishResponse) {}
+
+  // 集群相关的接口
+  // page 类型的存储
+  rpc CInfo(CInfoRequest) returns (CInfoResponse) {}
 }
