@@ -14,5 +14,10 @@ message PListRequest {
 }
 
 message PListResponse {
-  repeated bytes keys = 1;
+  repeated Item items = 1;
+}
+
+message Item {
+  bytes key = 1;
+  int64 ttl = 2;
 }
