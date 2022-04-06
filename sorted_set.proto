@@ -3,7 +3,6 @@ syntax = "proto3";
 package proto;
 option go_package = "pkg/protobuf";
 
-
 message Tuple {
   bytes value = 1;
   double score = 2;
@@ -68,4 +67,13 @@ message ZMembersRequest {
 
 message ZMembersResponse {
   repeated Tuple tuples = 1;
+}
+
+message ZTtlRequest {
+  bytes key = 1;
+  int64 ttl = 2;
+}
+
+message ZTtlResponse {
+  bool success = 1;
 }

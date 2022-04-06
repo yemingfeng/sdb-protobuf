@@ -3,7 +3,6 @@ syntax = "proto3";
 package proto;
 option go_package = "pkg/protobuf";
 
-
 message HLLCreateRequest {
   bytes key = 1;
 }
@@ -35,4 +34,13 @@ message HLLCountRequest {
 
 message HLLCountResponse {
   uint32 count = 1;
+}
+
+message HLLTtlRequest {
+  bytes key = 1;
+  int64 ttl = 2;
+}
+
+message HLLTtlResponse {
+  bool success = 1;
 }

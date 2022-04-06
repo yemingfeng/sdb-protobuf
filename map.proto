@@ -3,7 +3,6 @@ syntax = "proto3";
 package proto;
 option go_package = "pkg/protobuf";
 
-
 message Pair {
   bytes key = 1;
   bytes value = 2;
@@ -58,4 +57,13 @@ message MMembersRequest {
 
 message MMembersResponse {
   repeated Pair pairs = 1;
+}
+
+message MTtlRequest {
+  bytes key = 1;
+  int64 ttl = 2;
+}
+
+message MTtlResponse {
+  bool success = 1;
 }

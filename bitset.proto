@@ -3,7 +3,6 @@ syntax = "proto3";
 package proto;
 option go_package = "pkg/protobuf";
 
-
 message BSDelRequest {
   bytes key = 1;
 }
@@ -68,4 +67,13 @@ message BSCountRangeRequest {
 
 message BSCountRangeResponse {
   uint32 count = 1;
+}
+
+message BSTtlRequest {
+  bytes key = 1;
+  int64 ttl = 2;
+}
+
+message BSTtlResponse {
+  bool success = 1;
 }

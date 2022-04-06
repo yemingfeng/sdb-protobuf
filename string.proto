@@ -3,7 +3,6 @@ syntax = "proto3";
 package proto;
 option go_package = "pkg/protobuf";
 
-
 message SetRequest {
   bytes key = 1;
   bytes value = 2;
@@ -61,5 +60,14 @@ message IncrRequest {
 }
 
 message IncrResponse {
+  bool success = 1;
+}
+
+message TtlRequest {
+  bytes key = 1;
+  int64 ttl = 2;
+}
+
+message TtlResponse {
   bool success = 1;
 }

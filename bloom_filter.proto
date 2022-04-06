@@ -3,7 +3,6 @@ syntax = "proto3";
 package proto;
 option go_package = "pkg/protobuf";
 
-
 message BFCreateRequest {
   bytes key = 1;
   uint32 n = 2;
@@ -38,4 +37,13 @@ message BFExistRequest {
 
 message BFExistResponse {
   repeated bool exists = 1;
+}
+
+message BFTtlRequest {
+  bytes key = 1;
+  int64 ttl = 2;
+}
+
+message BFTtlResponse {
+  bool success = 1;
 }

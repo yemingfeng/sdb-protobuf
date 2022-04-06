@@ -3,7 +3,6 @@ syntax = "proto3";
 package proto;
 option go_package = "pkg/protobuf";
 
-
 message LRPushRequest {
   bytes key = 1;
   repeated bytes values = 2;
@@ -72,4 +71,13 @@ message LMembersRequest {
 
 message LMembersResponse {
   repeated bytes values = 1;
+}
+
+message LTtlRequest {
+  bytes key = 1;
+  int64 ttl = 2;
+}
+
+message LTtlResponse {
+  bool success = 1;
 }

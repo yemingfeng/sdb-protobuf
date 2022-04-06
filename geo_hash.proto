@@ -3,7 +3,6 @@ syntax = "proto3";
 package proto;
 option go_package = "pkg/protobuf";
 
-
 message Point {
   bytes id = 1;
   double latitude = 2;
@@ -80,4 +79,13 @@ message GHMembersRequest {
 
 message GHMembersResponse {
   repeated Point points = 1;
+}
+
+message GHTtlRequest {
+  bytes key = 1;
+  int64 ttl = 2;
+}
+
+message GHTtlResponse {
+  bool success = 1;
 }
