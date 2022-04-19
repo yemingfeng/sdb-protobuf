@@ -15,6 +15,7 @@ import "pkg/sdb-protobuf/map.proto";
 import "pkg/sdb-protobuf/geo_hash.proto";
 import "pkg/sdb-protobuf/page.proto";
 import "pkg/sdb-protobuf/pub_sub.proto";
+import "pkg/sdb-protobuf/cluster.proto";
 
 service SDB {
   // string 类型的存储
@@ -98,4 +99,6 @@ service SDB {
   // pub/sub
   rpc Subscribe(SubscribeRequest) returns (stream Message) {}
   rpc Publish(PublishRequest) returns (PublishResponse) {}
+
+  rpc CInfo(CInfoRequest) returns (CInfoResponse) {}
 }
