@@ -36,3 +36,12 @@ message HLLCountRequest {
 message HLLCountResponse {
   uint32 count = 1;
 }
+
+message HLLTtlRequest {
+  bytes key = 1;
+  uint64 ttl = 2;
+}
+
+message HLLTtlResponse {
+  bool success = 1;
+}

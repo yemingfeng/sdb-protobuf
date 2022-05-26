@@ -59,3 +59,12 @@ message MMembersRequest {
 message MMembersResponse {
   repeated Pair pairs = 1;
 }
+
+message MTtlRequest {
+  bytes key = 1;
+  uint64 ttl = 2;
+}
+
+message MTtlResponse {
+  bool success = 1;
+}

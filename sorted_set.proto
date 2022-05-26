@@ -69,3 +69,12 @@ message ZMembersRequest {
 message ZMembersResponse {
   repeated Tuple tuples = 1;
 }
+
+message ZTtlRequest {
+  bytes key = 1;
+  uint64 ttl = 2;
+}
+
+message ZTtlResponse {
+  bool success = 1;
+}

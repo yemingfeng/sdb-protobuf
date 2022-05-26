@@ -54,3 +54,12 @@ message SMembersRequest {
 message SMembersResponse {
   repeated bytes values = 1;
 }
+
+message STtlRequest {
+  bytes key = 1;
+  uint64 ttl = 2;
+}
+
+message STtlResponse {
+  bool success = 1;
+}

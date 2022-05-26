@@ -63,3 +63,12 @@ message IncrRequest {
 message IncrResponse {
   bool success = 1;
 }
+
+message TtlRequest {
+  bytes key = 1;
+  uint64 ttl = 2;
+}
+
+message TtlResponse {
+  bool success = 1;
+}

@@ -73,3 +73,12 @@ message LMembersRequest {
 message LMembersResponse {
   repeated bytes values = 1;
 }
+
+message LTtlRequest {
+  bytes key = 1;
+  uint64 ttl = 2;
+}
+
+message LTtlResponse {
+  bool success = 1;
+}

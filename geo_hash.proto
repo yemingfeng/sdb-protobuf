@@ -81,3 +81,12 @@ message GHMembersRequest {
 message GHMembersResponse {
   repeated Point points = 1;
 }
+
+message GHTtlRequest {
+  bytes key = 1;
+  uint64 ttl = 2;
+}
+
+message GHTtlResponse {
+  bool success = 1;
+}
