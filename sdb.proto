@@ -64,7 +64,6 @@ service SDB {
   rpc BFAdd(BFAddRequest) returns (BFAddResponse) {}
   rpc BFExist(BFExistRequest) returns (BFExistResponse) {}
   rpc BFTtl(BFTtlRequest) returns (BFTtlResponse) {}
-  rpc BFTtl(BFTtlRequest) returns (BFTtlResponse) {}
 
   // hyper log log 类型的存储
   rpc HLLCreate(HLLCreateRequest) returns (HLLCreateResponse) {}
